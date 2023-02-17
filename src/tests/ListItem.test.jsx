@@ -46,10 +46,13 @@ describe('ListItem', () => {
         expect(node.children).toHaveLength(1);
     });
     
+    //TODO: implement this
     it('callback is called', () => {});
 
+    //TODO: implement this
     it('callback is not called when not checkable', () => {});
 
+    //TODO: implement this
     it('matches saved snapshot', () => {
         const tree = render(
             <ListItem
