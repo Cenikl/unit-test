@@ -80,14 +80,8 @@ describe('ListItem', () => {
 
     //TODO: implement this
     it('matches saved snapshot', () => {
-        const tree = renderer.create(
-            <ListItem
-                id='list-item-test'
-                checkable={true}
-                onCheck={mockOnCheck}
-                item='Lorem ipsum dolor sit amet consectetur'
-            />
-        ).toJSON();
+        const tree = renderer.create(<ListItem id='list-item-test'checkable={true}onCheck={mockOnCheck}item='Lorem ipsum dolor sit amet consectetur'/>
+).toJSON();
         expect(tree).toMatchSnapshot();
     });
 
